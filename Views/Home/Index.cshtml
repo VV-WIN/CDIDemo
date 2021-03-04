@@ -1,0 +1,172 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* Hero *@
+<div class="d-sm-flex align-items-center justify-content-between w-100" style="height: 100vh;">
+    <div class="col-md-4 mx-auto mb-4 mb-sm-0 headline">
+        <span class="text-secondary text-uppercase">Computer Deductions, Inc.</span>
+        <h1 class="display-4 my-4 font-weight-bold">
+            Turning Science into
+            <span style="color: #eb2d2e;">Solutions</span>
+            for Over 30 Years
+        </h1>
+        <a href="#" class="btn px-5 py-3 text-white mt-3 mt-sm-0" style="border-radius: 30px; background-color: #eb2d2e;">About Us</a>
+    </div>
+    <div class="col-md-8 h-100 clipped" style="min-height: 350px; background-image: url(/images/michael-dziedzic-aQYgUYwnCsM-unsplash.jpg); background-position: center; background-size: cover;">
+    </div>
+</div>
+
+@* About Us *@
+<div class="container p-3">
+    <h1 class="display-3 font-weight-bold text-center">About Us</h1>
+    <div class="media">
+        <img src="~/images/CDILogo.png" class="align-self-center mr-3" alt="...">
+        <div class="media-body">
+            <p>
+                Computer Deductions, Inc. (CDI) was incorporated in California in 1971 and is categorized as a small business.
+                As a small business, CDI commonly provides software development services as a subcontractor to major corporations
+                (e.g. ATT, DEC, IBM, NEC, Tandem, UNISYS). The company, being technically oriented, concentrates on the design and
+                development of large custom systems such as high volume message switches, large database systems, and the automation
+                of large clerical systems.
+            </p>
+            <p class="mb-0">
+                In addition, CDI provides top management consulting services to produce feasibility studies,
+                procurement documents, special studies associated with automation or communications, and assisting customer staff in the
+                development of automated systems. CDI has also developed communication line handlers for Disney, California Department of Justice,
+                California Department of Motor Vehicles, and Tandem. Additionally, CDI is registered as a Value Added Reseller (VAR) for Unisys,
+                DEC, NCR, and Dell, supplying computer equipment and software.
+            </p>
+            <br />
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="#" class="btn px-5 py-3 text-white mt-3 mt-sm-0" style="border-radius: 30px; background-color: #eb2d2e;">Discover More About Us</a>
+    </div>
+</div>
+
+@* CDI Advantages Cards *@
+<div class="servicesCurve">
+    <div class="container pt-3">
+        <h1 class="display-3 my-3 font-weight-bold text-white text-center">CDI Advantages</h1>
+        <div class="card-deck">
+            <div class="card">
+                <img src="/images/undraw_progressive_app_m9ms (1).svg" class="card-img-top p-3" alt="Image of computer and mobile phone">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Software Development
+                    </h5>
+                    <p class="card-text">
+                        CDI commonly provides software development services as a subcontractor to major corporations (e.g. ATT, DEC, IBM, NEC, Tandem, UNISYS).
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn px-5 py-3 text-white mt-3 mt-sm-0" style="border-radius: 30px; background-color: #eb2d2e;">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/undraw_Process_re_gws7.svg" class="card-img-top p-3" alt="Image of computer and mobile phone">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Network Design and Installation
+                    </h5>
+                    <p class="card-text">
+                        CDI had an instrumental role in the development and implementation of California Department of Motor Vehicles
+                        statewide communications network.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn px-5 py-3 text-white mt-3 mt-sm-0" style="border-radius: 30px; background-color: #eb2d2e;">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/undraw_secure_data_0rwp.svg" class="card-img-top p-3" alt="Image of computer and mobile phone">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Mobile Data Computer Solutions
+                    </h5>
+                    <p class="card-text">
+                        The Mobile Data Computing (MDC) department is the newest division of CDI.
+                        This group specializes in System Integration.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn px-5 py-3 text-white mt-3 mt-sm-0" style="border-radius: 30px; background-color: #eb2d2e;">Mobile Solutions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Background Curve *@
+<svg class="topLeftRounded" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="50 20 50 80" preserveAspectRatio="none">
+    <path d="M0,100 C15,100 35,50 50,50 L50,50 C65,50 85,100 100,100 Z"></path>
+</svg>
+
+@* Contact Us *@
+<section class="contact-page-section">
+    <h1 class="display-3 font-weight-bold text-center">Contact Us</h1>
+    <div class="container">
+        <div class="inner-container">
+            <div class="row clearfix">
+                <!--Form Column-->
+                <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                    <div class="inner-column">
+
+                        <!--Contact Form-->
+                        <div class="contact-form">
+                            <form method="post" action="sendemail.php" id="contact-form">
+                                <div class="row clearfix">
+                                    <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                        <input type="text" name="name" value="" placeholder="Name" required>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                        <input type="email" name="email" value="" placeholder="Email" required>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                        <input type="text" name="subject" value="" placeholder="Subject" required>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                        <input type="text" name="phone" value="" placeholder="Phone" required>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                                        <textarea name="message" placeholder="Massage"></textarea>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                                        <a href="#" class="btn px-5 py-3 text-white mt-3 mt-sm-0" style="border-radius: 30px; background-color: #eb2d2e;">Send</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--End Contact Form-->
+
+                    </div>
+                </div>
+
+                <!--Info Column-->
+                <div class="info-column col-md-4 col-sm-12 col-xs-12">
+                    <div class="inner-column">
+                        <h2>Contact Info</h2>
+                        <ul class="list-info">
+                            <li>
+                                <i class="fas fa-globe"></i>8680 Greenback Lane, Suite #210
+                                Orangevale, CA 95662
+                            </li>
+                            <li><i class="far fa-envelope"></i><a href="mailto:info@cdi-hq.com">info@cdi-hq.com</a></li>
+                            <li><i class="fas fa-phone"></i><a href="tel:9169873600">(916) 987-3600</a></li>
+                        </ul>
+                        <ul class="social-icon-four">
+                            <li class="follow">Follow on: </li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
